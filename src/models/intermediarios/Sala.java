@@ -1,5 +1,6 @@
-package models;
+package models.intermediarios;
 
+import models.Paciente;
 import models.medicos.Medico;
 import models.medicos.MedicoConsultorio;
 
@@ -43,7 +44,7 @@ public class Sala {
         return "Sala: "+ this.sala;
     }
 
-    public void realizarAtendimento(){
+    public final void realizarAtendimento(){
         paciente.fichaCompletaPaciente();
         System.out.println("Olá,"+paciente.getNome()+" Bom dia! Me chamo "+medicoConsultorio.getNome()+" e vou realizar sua consulta hoje");
         realizarPerguntas();

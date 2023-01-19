@@ -4,7 +4,7 @@ import models.enums.Especialidade;
 
 import java.util.Objects;
 
-public class DataEspecialidade {
+public class DataXEspecialidade {
     private Integer dia;
     private Integer mes;
     private Integer ano;
@@ -26,7 +26,7 @@ public class DataEspecialidade {
         return ano;
     }
 
-    public DataEspecialidade(Integer dia, Integer mes, Integer ano, Especialidade especialidade) {
+    public DataXEspecialidade(Integer dia, Integer mes, Integer ano, Especialidade especialidade) {
         this.dia = dia;
         this.mes = mes;
         this.ano = ano;
@@ -37,7 +37,7 @@ public class DataEspecialidade {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        DataEspecialidade dataEspecialidade = (DataEspecialidade) o;
-        return Objects.equals(dia, dataEspecialidade.dia) && Objects.equals(mes, dataEspecialidade.mes) && Objects.equals(ano, dataEspecialidade.ano);
+        DataXEspecialidade dataXEspecialidade = (DataXEspecialidade) o;
+        return Objects.equals(dia, dataXEspecialidade.dia) && Objects.equals(mes, dataXEspecialidade.mes) && Objects.equals(ano, dataXEspecialidade.ano);
     }
 }

@@ -2,7 +2,7 @@ package models.medicos;
 
 import models.intermediarios.Fila;
 import models.Paciente;
-import models.Sala;
+import models.intermediarios.Sala;
 import models.enums.Especialidade;
 
 public class MedicoConsultorio extends Medico{

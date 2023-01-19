@@ -1,7 +1,5 @@
+import menu.Menu;
 import models.*;
-import models.enums.Especialidade;
-import models.enums.Sintoma;
-import models.intermediarios.Fila;
 import models.medicos.*;
 
 import java.util.Scanner;

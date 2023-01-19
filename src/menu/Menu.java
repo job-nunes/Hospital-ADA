@@ -1,5 +1,7 @@
-package models;
+package menu;
 
+import models.Atendente;
+import models.Pessoa;
 import models.enums.Especialidade;
 import models.intermediarios.Agenda;
 import models.intermediarios.Fila;
@@ -32,7 +34,7 @@ public class Menu {
         String opcaoDigitada;
         while (isManterMenuAtendente){
             System.out.println("Digite sua opção");
-            System.out.println("1 - Chamar próxima pessoa da fila de atendimentos: ");
+            System.out.println("1 - Chamar próxima pessoa da fila de atendimentos");
             System.out.println("2 - Visualizar fila de Atendimentos");
             System.out.println("3 - Visualizar fila de Consultas ");
             System.out.println("4 - Visualizar suas credenciais");
@@ -66,7 +68,7 @@ public class Menu {
         String opcaoDigitada;
         while (isManterMenuAtendente){
             System.out.println("Digite sua opção");
-            System.out.println("1 - Chamar próxima pessoa da fila de consulta: ");
+            System.out.println("1 - Chamar próxima pessoa da fila de consulta");
             System.out.println("2 - Visualizar sua fila de Consultas ");
             System.out.println("3 - Visualizar suas credenciais ");
             System.out.println("4 - Visualizar sua agenda");
@@ -100,7 +102,7 @@ public class Menu {
         String opcaoDigitada;
         while (isManterMenuAtendente){
             System.out.println("Digite sua opção");
-            System.out.println("1 - Chamar próxima pessoa da fila de cirurgia: ");
+            System.out.println("1 - Chamar próxima pessoa da fila de cirurgia");
             System.out.println("2 - Visualizar sua fila de cirurgias");
             System.out.println("3 - Visualizar suas credenciais");
             System.out.println("4 - Visualizar sua agenda");

@@ -45,7 +45,7 @@ public class Cirurgia {
         return "Sala: "+ this.salaDeCirurgia;
     }
 
-    public void realizarAtendimento(){
+    public final void realizarAtendimento(){
         paciente.fichaCompletaPaciente();
         System.out.println("Olá,"+ paciente.getNome()+" Bom dia! Me chamo "+ cirugiao.getNome()+" e vou realizar sua CIRURGIA hoje");
         analisarSintomas();

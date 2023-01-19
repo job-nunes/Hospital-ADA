@@ -16,7 +16,7 @@ public class Atendimento {
         this.pessoa = pessoa;
         this.atendente = atendente;
     }
-    public void realizarAtendimento(){
+    public final void realizarAtendimento(){
         System.out.println("Olá,"+pessoa.getNome()+" Bom dia! Me chamo "+atendente.getNome()+" e vou realizar seu primeiro atendimento hoje");
         solicitarInfomacoes();
     }
@@ -115,18 +115,15 @@ public class Atendimento {
         Integer mes = scanner.nextInt();
         System.out.println("Informe o ano:");
         Integer ano = scanner.nextInt();
-        DataEspecialidade dataEspecialidade = new DataEspecialidade(dia,mes,ano,paciente.getNecessidadeMedica());
-        Agenda.addConsultaAgenda(dataEspecialidade);
+        DataXEspecialidade dataXEspecialidade = new DataXEspecialidade(dia,mes,ano,paciente.getNecessidadeMedica());
+        Agenda.addConsultaAgenda(dataXEspecialidade);
     }
-
     public Pessoa getPessoa() {
         return pessoa;
     }
-
     public Paciente getPaciente() {
         return this.paciente;
     }
-
     public Atendente getAtendente() {
         return this.atendente;
     }

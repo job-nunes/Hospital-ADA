@@ -28,6 +28,7 @@ public final class Cirurgiao extends Medico {
     private void comecarCirurgia(Paciente paciente) {
         salaDeCirurgia.setCirurgiao(this);
         salaDeCirurgia.setPaciente(paciente);
+        salaDeCirurgia.realizarAtendimento();
     }
 
 

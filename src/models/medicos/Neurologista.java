@@ -1,8 +1,6 @@
 package models.medicos;
 
-import models.Sala;
 import models.enums.Especialidade;
-import models.Paciente;
 
 public final class Neurologista extends MedicoConsultorio {
 
